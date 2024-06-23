@@ -123,15 +123,28 @@ input{
     font-size: 25px;
     color: #000000;
     font-family: 'Franklin Gothic ', Arial, sans-serif;
-    
 }
 h1,h3{
     font-family: 'Franklin Gothic ', Arial, sans-serif;
     color: #fff;
 }
 
+#result{
+    font-size:30px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Franklin Gothic ', Arial, sans-serif;
+}
+
 .result{
     display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 
