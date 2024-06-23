@@ -66,7 +66,6 @@ let points = document.querySelector("#pts"),
   option = document.querySelector(".options"),
   que_no = 0,
   form = document.querySelector(".form");
-points.innerHTML = pnt;
 
 let restartbnt = document.querySelector("#restart"),
   resultbox = document.querySelector(".result"),
