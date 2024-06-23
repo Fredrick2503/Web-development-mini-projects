@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="info">
+          <h1 id="name"></h1>
+          <h3 id="USN"></h3>
+          <h3 id="roll_no"></h3>
+        </div>
+        <div class="ptns">
+          <h2>Points:<span id="pts"></span></h2>
+        </div>
+      </div>
+      <div class="box">
+        <div class="form">
+          <h1>Enter Your Details</h1>
+          <br />
+          <label for="iname">Name:</label
+          ><input type="text" id="iname" /><br />
+          <label for="iname">USN:</label><input type="text" id="iUSN" /><br />
+          <label for="iname">Roll no:</label
+          ><input type="text" id="iroll_no" /><br />
+          <button onclick="start()" id="start">Start</button>
+        </div>
+        <div class="que blank">
+          <p id="que"></p>
+        </div>
+        <div class="options blank"></div>
+        <div class="result blank">
+          <p id="result"></p>
+          <button id="restart">Restart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="Quiz.js"></script>
+</html>
