@@ -138,13 +138,15 @@ const show_result = () => {
 restartbnt.addEventListener("click", () => {
   form.classList.toggle("blank");
   resultbox.classList.toggle("blank");
+  document.querySelector("#name").innerHTML = '';
+  document.querySelector("#USN").innerHTML = '';
+  document.querySelector("#roll_no").innerHTML = '';
   que_no = 0;
   pnt = 0;
 });
 
 const start = () => {
   points.innerHTML = pnt;
-
   let name = document.querySelector("#iname"),
     usn = document.querySelector("#iUSN"),
     roll_no = document.querySelector("#iroll_no");
