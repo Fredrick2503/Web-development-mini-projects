@@ -142,6 +142,8 @@ restartbnt.addEventListener("click", () => {
   document.querySelector("#roll_no").innerHTML = '';
   que_no = 0;
   pnt = 0;
+  points.innerHTML = pnt;
+
 });
 
 const start = () => {

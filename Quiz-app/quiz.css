@@ -15,12 +15,14 @@ body{
 }
 
 .container{
+    margin: 2% 0;
     background: #383838d5;
     width: 60%;
-    height: 70%;
-    padding: 25px;
+    /* min-height: 80%; */
+    padding: 25px 2px;
+    height: 80%;
     border-radius: 25px;
-    border: 5px solid #fff ;
+    border: 5px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -41,7 +43,7 @@ body{
     background: #adadadb7;
     border: 2px solid #fff;
     border-radius: 25px;
-    height: 75%;
+    min-height: 80%;
     width: 95%;
     display: flex;
     justify-content: space-evenly;
@@ -50,7 +52,16 @@ body{
 }
 
 .options{
-    height: 50%;
+    width: 90%;
+    align-self: center;
+    margin: 5% 0;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 48% 48%;
+    gap: 2%;
+}
+/* .options{
     width: 80%;
     align-self: center;
     display: flex;
@@ -59,10 +70,11 @@ body{
     font-size: 30px;
     flex-wrap: wrap;
     gap: 3px;
-}
+    margin: 5% 0;
+} */
 
 button{
-    
+    height: auto;
     font-size: 20px;
     background: none;
     border: 2px solid #fff;
@@ -88,8 +100,8 @@ button:hover{
 }
 
 .que{
-    width: 100%;
-
+    /* width: 100%; */
+    padding: 5% 5% 0% 5%;
 }
 
 label{
@@ -111,11 +123,13 @@ input{
 
 .form{
     width: 90%;
-    padding: 25px;
+    padding: 2.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    margin: 2.5%;
 }
 
 
@@ -140,7 +154,7 @@ h1,h3{
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 70%;
+    min-height: 70%;
     align-self: center;
     justify-content: center;
     align-items: center;
@@ -155,3 +169,16 @@ h1,h3{
     .blank{
         display: none;
     }
+
+
+@media only screen and (max-width:320px) {
+    .options{
+        grid-template-rows: repeat(4,23%);
+        grid-template-columns: none;
+    }
+}
+@media only screen and (max-width:425px) {
+    .container{
+        width: 90%;
+    }
+}
