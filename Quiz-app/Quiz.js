@@ -67,16 +67,20 @@ let points = document.querySelector("#pts"),
   que_no = 0,
   form = document.querySelector(".form");
 
+
+
 let restartbnt = document.querySelector("#restart"),
   resultbox = document.querySelector(".result"),
   result = document.querySelector("#result");
-const sleep = (sec) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(true);
-    }, sec);
-  });
-};
+
+function mode(){
+    document.querySelector("body").classList.toggle('dark')
+    if(document.querySelector("#mode").innerHTML!="Dark")
+    {document.querySelector("#mode").innerHTML="Dark"}
+    else{
+      document.querySelector("#mode").innerHTML="Light"
+    }
+  }
 
 const init_que = () => {
   console.log(que_no);
@@ -145,6 +149,8 @@ restartbnt.addEventListener("click", () => {
   points.innerHTML = pnt;
 
 });
+
+
 
 const start = () => {
   points.innerHTML = pnt;
